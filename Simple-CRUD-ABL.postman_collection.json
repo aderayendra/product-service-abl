@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "84725902-1234-4567-890a-1234567890ab",
+		"name": "Simple CRUD ABL",
+		"description": "Collection to test Simple CRUD ABL API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produk",
+			"item": [
+				{
+					"name": "Get All Produk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/produk",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"produk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Produk by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/produk/P001",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"produk",
+								"P001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Produk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"P001\",\n    \"nama\": \"Produk A\",\n    \"kategori\": \"Kategori A\",\n    \"harga\": 10000,\n    \"stok\": 50\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/produk",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"produk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Produk",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\": \"Produk A Updated\",\n    \"kategori\": \"Kategori B\",\n    \"harga\": 15000,\n    \"stok\": 30\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/produk/P001",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"produk",
+								"P001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Produk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/produk/P001",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"produk",
+								"P001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
