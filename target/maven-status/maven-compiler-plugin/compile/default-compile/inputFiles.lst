@@ -1,0 +1,5 @@
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/simplecrudabl/SimpleCrudAblApplication.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/simplecrudabl/controller/ProdukController.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/simplecrudabl/model/Produk.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/simplecrudabl/repository/ProdukRepository.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/simplecrudabl/service/ProdukService.java
