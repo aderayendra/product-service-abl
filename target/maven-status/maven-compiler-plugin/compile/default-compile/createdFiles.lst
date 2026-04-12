@@ -1,6 +1,6 @@
-id/aderayendra/simplecrudabl/service/ProdukService.class
-id/aderayendra/simplecrudabl/model/Produk.class
-id/aderayendra/simplecrudabl/SimpleCrudAblApplication.class
-id/aderayendra/simplecrudabl/model/Produk$ProdukBuilder.class
-id/aderayendra/simplecrudabl/repository/ProdukRepository.class
-id/aderayendra/simplecrudabl/controller/ProdukController.class
+id/aderayendra/productservice/service/ProdukService.class
+id/aderayendra/productservice/repository/ProdukRepository.class
+id/aderayendra/productservice/controller/ProdukController.class
+id/aderayendra/productservice/model/Produk$ProdukBuilder.class
+id/aderayendra/productservice/ProductServiceApplication.class
+id/aderayendra/productservice/model/Produk.class
