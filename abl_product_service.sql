@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 08, 2026 at 09:07 AM
--- Server version: 10.11.16-MariaDB
--- PHP Version: 7.4.33
+-- Host: host.docker.internal
+-- Generation Time: Apr 14, 2026 at 01:53 PM
+-- Server version: 10.11.14-MariaDB-0ubuntu0.24.04.1
+-- PHP Version: 8.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `simple-crud-abl`
+-- Database: `abl_product_service`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,8 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id`, `nama`, `kategori`, `harga`, `stok`) VALUES
-('P001', 'Susu UHT', 'Minuman', 5000, 10);
+('P001', 'Produk A', 'Kategori A', 10000, 50),
+('P002', 'Produk B Updated', 'Kategori B', 125000, 30);
 
 --
 -- Indexes for dumped tables
