@@ -1,5 +1,8 @@
+id/aderayendra/productservice/security/JwtAuthenticationFilter.class
 id/aderayendra/productservice/service/ProdukService.class
 id/aderayendra/productservice/repository/ProdukRepository.class
+id/aderayendra/productservice/security/JwtUtil.class
+id/aderayendra/productservice/security/SecurityConfig.class
 id/aderayendra/productservice/controller/ProdukController.class
 id/aderayendra/productservice/model/Produk$ProdukBuilder.class
 id/aderayendra/productservice/ProductServiceApplication.class

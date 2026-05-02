@@ -4,6 +4,7 @@ import id.aderayendra.productservice.model.Produk;
 import id.aderayendra.productservice.service.ProdukService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,11 +29,13 @@ public class ProdukController {
     }
 
     @PostMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public Produk createProduk(@RequestBody Produk produk) {
         return produkService.saveProduk(produk);
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Produk> updateProduk(@PathVariable String id, @RequestBody Produk produkDetails) {
         try {
             return ResponseEntity.ok(produkService.updateProduk(id, produkDetails));
@@ -42,6 +45,7 @@ public class ProdukController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Void> deleteProduk(@PathVariable String id) {
         try {
             produkService.deleteProduk(id);

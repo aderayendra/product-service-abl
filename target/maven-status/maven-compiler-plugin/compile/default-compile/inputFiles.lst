@@ -2,4 +2,7 @@
 /home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/controller/ProdukController.java
 /home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/model/Produk.java
 /home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/repository/ProdukRepository.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/security/JwtAuthenticationFilter.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/security/JwtUtil.java
+/home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/security/SecurityConfig.java
 /home/aderayendra/projects/abl/product-service-abl/src/main/java/id/aderayendra/productservice/service/ProdukService.java
